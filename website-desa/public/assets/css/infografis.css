@@ -1,0 +1,99 @@
+
+    .infografis-section { 
+        padding: 5.5rem 0 1.4rem;
+        background-color: #f9f9f9;
+    }
+    .infografis-header {
+      position: relative;
+      background: url('/public/assets/images/bginfo.jpg') center/cover no-repeat;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .infografis-header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      
+    }
+    .infografis-section h1 {
+      position: flex;
+      color: #ffffff;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      text-shadow: #eb2525 1px 0 10px;
+    }
+
+    .infografis-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 80px;
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+    .menu-item {
+      background: #c62828;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: background 0.3s;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);    
+    }
+    .menu-item:hover {
+      background: #d56f6f;
+    }
+    .menu-item svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+      margin-bottom: 8px;
+    }
+    .menu-item span {
+      font-size: 0.9rem;
+    }
+ 
+    
+    /* File: bar-chart-section.css */
+  .bar-chart-section {
+    padding: 2rem 1% 2.4rem; 
+    background: #f9f9f9;
+    font-family: sans-serif;
+  }
+  .bar-chart-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .bar-chart-section h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  .bar-chart-section .chart-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* rasio 2:1 */
+  }
+  .chart-wrapper canvas {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%  !important;
+    height: 100% !important;
+  }
+  

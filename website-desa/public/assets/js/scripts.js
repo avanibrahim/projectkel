@@ -80,4 +80,42 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });    
 
-// Halaman 3
+// Sotk 
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    mirror: false
+  });
+
+  // Add hover animation
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'scale(1.05)';
+      card.style.transition = 'transform 0.3s ease';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'scale(1)';
+      card.style.transition = 'transform 0.3s ease';
+    });
+  });
+
+
+  // About JS
+  document.addEventListener('DOMContentLoaded', function() {
+    const sejarahContent = document.querySelector('.sejarah-content');
+    
+    function checkScroll() {
+      const triggerBottom = window.innerHeight * 0.8;
+      const contentTop = sejarahContent.getBoundingClientRect().top;
+  
+      if (contentTop < triggerBottom) {
+        sejarahContent.classList.add('animate');
+      }
+    }
+  
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Check on initial load
+  });

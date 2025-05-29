@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelurahan Huangobotu</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../assets/css/belanja.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="..//assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/globals.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/LOGO_KOTA_GORONTALO.png" alt="Logo Desa" class="navbar-logo-img"><a href="index.html" class="navbar-logo">Kelurahan<span>Huangobotu</span>.</a>
+      <div class="navbar-nav">
+        <a href="../index.html">Beranda</a>
+        <a href="../about.html">Profil Desa</a>
+        <a href="../infografis.html">Infografis</a>
+        <a href="../berita.html">Berita</a>
+        <a href="../belanja/belanja.html">Belanja</a>
+        <a href="../monitoring.html">Monitoring</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+   <!-- Navbar End-->
+   <!-- SECTION PRODUK -->
+<div class="product-section">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfw-r8ic7bFyI1-kIQksbT6qlEC-gEHjc6zV7i2vp3fdaYn0WmXOOOUY0Fyym04i4f9U&usqp=CAU" alt="Susu Sapi Murni" class="main-img">
+        <div class="thumbnail">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfw-r8ic7bFyI1-kIQksbT6qlEC-gEHjc6zV7i2vp3fdaYn0WmXOOOUY0Fyym04i4f9U&usqp=CAU" alt="Thumbnail">
+        </div>
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Kue Karawo</h2>
+        <div class="rating-category">
+          <span class="stars">★★★★★</span>
+          <span class="rating">(0)</span>
+          <span class="category">| Cake</span>
+        </div>
+        <div class="price">Rp10.000</div>
+        <p class="description">
+            Kue Karawo adalah kue kering khas Gorontalo yang terinspirasi dari seni sulaman Karawo, 
+            yang merupakan kerajinan tangan khas Gorontalo. Kue ini dibuat dengan bahan-bahan seperti tepung terigu, 
+            mentega, gula, telur, susu, vanili, dan maizena, kemudian dicetak dan dipanggang. Setelah matang dan dingin, 
+            kue dihias dengan motif seperti sulaman Karawo, 
+            biasanya menggunakan icing gula berwarna-warni.
+        </p>
+        <button class="btn-whatsapp">📱 Hubungi Penjual</button>
+        <div class="share">
+          <span>Bagikan:</span>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>        
+        </div>
+      </div>
+    </div>
+  
+    <div class="review-section">
+      <h3>ULASAN PEMBELI</h3>
+      <div class="no-review">
+        <span>😐 Tidak ada ulasan untuk saat ini</span>
+      </div>
+    </div>
+  </div>
+    <!-- End of SECTION PRODUK -->
+     <style>
+        /* CSS SECTION PRODUK */
+.product-section {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 30px;
+}
+
+.product-card {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 7rem 1% 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  gap: 20px;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image .main-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  margin-top: 10px;
+}
+
+.thumbnail img {
+  width: 60px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product-details {
+  flex: 2;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.rating-category {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 10px;
+}
+
+.stars {
+  color: #ccc;
+  letter-spacing: 2px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.share {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-section {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.review-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.no-review {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+     </style>  
+</body>
+  
+
+     <script src="../public/assets/js/scripts.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="../public/assets/js/navbar-menu.js"></script>
+
+   <!-- Footer -->
+   <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="col footer-about">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/LOGO_KOTA_GORONTALO.png" alt="Logo Desa Bancak" class="footer-img">
+        <h3>Kelurahan Huangobotu</h3>
+        <p>Website Resmi Kelurahan Huangobotu, Kecamatan Dungingi, Kota Gorontalo.</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" alt="Facebook" style="width: 24px;"></a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" style="width: 24px;"></a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" style="width: 24px;"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt="Instagram" style="width: 24px;"></a>    
+        </div>
+      </div>
+  
+      <div class="col footer-contact">
+        <h3><i class="fas fa-comments"></i> HUBUNGI KAMI</h3>
+        <p> Jalan. Apel, Kelurahan Huangobotu, Kecamatan Dungingi, Kota Gorontalo, Gorontalo, Indonesia. 96137</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/16076/16076069.png" alt="phone" style="width: 20px;"> Telepon/Fax: 0812XXXXXXXX</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/873/873360.png" alt="email" style="width: 20px;"> Email: lurahhuangobotu@gmail.com</p>    
+      </div>
+  
+      <div class="col footer-gallery">
+        <h3><i class="fas fa-camera"></i> ALBUM GALERI</h3>
+        <div class="gallery-grid">
+          <a href="/public/galeri.html"><img src="https://uns.ac.id/id/wp-content/uploads/2022/10/hm-pelita-fp-uns-gelar-kegiatan-bina-desa-di-kragan-1.jpeg" alt="Galeri 1"></a>
+          <a href="/public/galeri.html"><img src="https://desaselat.badungkab.go.id/storage/desaselat/image/WhatsApp%20Image%202024-04-24%20at%2011.41.24.jpeg" alt="Galeri 2">
+          <a href="/public/galeri.html"><img src="https://i0.wp.com/www.sidamukti.desa.id/wp-content/uploads/2021/12/IMG-20211122-WA0013.jpg?resize=1080%2C675&ssl=1" alt="Galeri 3">
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© Copyright 2025 - Kelurahan Huangobotu - Powered By iTELVORE Corporation</p>
+    </div>
+  
+    <button class="back-to-top" id="backToTop" style="display: none;"><img src="https://media.istockphoto.com/id/1261125789/id/vektor/panah-menunjuk-ke-atas-putih-dalam-lingkaran-merah-untuk-ikon-datar-terisolasi-pada-putih.jpg?s=612x612&w=0&k=20&c=DfqaW1TQYFPFu0AhKKLl3wj4dtsyAbpXwLTVv5dYC2M=" style="width: 50px; border-radius: 30rem;" alt="back to top"></button>
+    <script src="../public/assets/js/footer.js"></script>
+  </footer>
+</html>

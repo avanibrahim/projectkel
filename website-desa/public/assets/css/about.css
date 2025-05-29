@@ -1,0 +1,377 @@
+
+
+.struktur-organisasi {
+  padding: 7rem 7% 1.4rem;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section-title span {
+  color: var(--primary);
+}
+
+.struktur-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.struktur-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.struktur-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: #666 solid 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+}
+
+.struktur-content h3 {
+  margin-bottom: 1rem;
+}
+
+.struktur-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/*Struktur Preview */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: 100px auto;
+  display: block;
+  max-width: 90%;
+  max-height: 60vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close-modal {
+  position: absolute;
+  right: 20rem;
+  top: 135px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.struktur-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.struktur-img:hover {
+  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+  .struktur-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .struktur-item {
+    width: 100%;
+  }
+}
+
+
+/* Sejarah Section */
+ /* Sejarah section styles */
+ .sejarah {
+    padding: 5rem 7% 1.4rem;
+    background-color: #f9f9f9;
+  }
+
+  .sejarah .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .sejarah .section-title span {
+    color: #eb2525;
+  }
+
+  .sejarah-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .sejarah-content {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .scroll-box {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .sejarah-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+
+  .sejarah-table th,
+  .sejarah-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  .sejarah-table th {
+    background-color: #eb2525;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .sejarah-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+
+  .sejarah-table tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  /* Scrollbar Styling */
+  .scroll-box::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scroll-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .scroll-box::-webkit-scrollbar-thumb {
+    background: #eb2525;
+    border-radius: 10px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .sejarah {
+      padding: 3rem 5%;
+    }
+
+    .sejarah .section-title {
+      font-size: 2rem;
+    }
+
+    .sejarah-container {
+      padding: 1rem;
+    }
+
+    .sejarah-table th,
+    .sejarah-table td {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .sejarah {
+      padding: 2rem 3%;
+    }
+
+    .sejarah .section-title {
+      font-size: 1.8rem;
+    }
+
+    .scroll-box {
+      padding: 0.5rem;
+    }
+
+    .sejarah-table th,
+    .sejarah-table td {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    .sejarah-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  } 
+   /* Style for paragraph text */
+   .sejarah p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 1.5rem 0;
+    text-align: justify;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 450;
+    text-indent: 2em;
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .sejarah p {
+      font-size: 0.9rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .sejarah p {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin: 0.8rem 0;
+    }
+  }
+  
+  /* Visi dan Misi Section */
+  /* Visi Misi Section Styles */
+.visi-misi {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .section-title span {
+    color: #eb2525;
+  }
+  
+  .visi-misi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .visi, .misi {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .visi h3, .misi h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .visi p {
+    line-height: 1.6;
+    color: #666;
+    padding-bottom: 2rem;
+  }
+  
+  .misi ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .misi ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .misi ul li:before {
+    content: "•";
+    color: #eb2525;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 992px) {
+    .visi-misi-container {
+      gap: 30px;
+    }
+    
+    .section-title {
+      font-size: 2.2em;
+    }
+    
+    .visi h3, .misi h3 {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .visi-misi-container {
+      flex-direction: column;
+    }
+    
+    .visi, .misi {
+      width: 100%;
+    }
+    
+    .section-title {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .visi-misi {
+      padding: 40px 0;
+    }
+    
+    .section-title {
+      font-size: 1.8em;
+    }
+    
+    .visi h3, .misi h3 {
+      font-size: 1.4em;
+    }
+    
+    .visi, .misi {
+      padding: 20px;
+    }
+  }
